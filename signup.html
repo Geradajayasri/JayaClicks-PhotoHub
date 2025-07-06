@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Signup | JayaClicks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main signup-page">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">JayaClicks</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.php">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="service.html">SERVICE</a></li>
+                    <li><a href="design.html">DESIGN</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    
+                </ul>
+                
+            </div>
+            <div class="search">
+                <input class="srch" type="search" placeholder="Type To Text">
+                <a href="#"><button class="btn">Search</button></a>
+            </div>
+        </div>
+
+        <div class="content">
+            <h1>Create Your <br><span>JayaClicks</span> Account</h1>
+            <p class="par">Sign up as a Photographer to showcase your work or as a Viewer to explore and book talent.</p>
+
+            <div class="form" style="height: 520px;">
+                <h2>Sign Up</h2>
+                <form action="backend/signup.php" method="POST">
+                    <select name="role" class="role" required>
+                        <option value="">-- Select Role --</option>
+                        <option value="photographer">Photographer</option>
+                        <option value="user">User</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                    <input type="text" name="name" placeholder="Enter Name" required>
+                    <input type="email" name="email" placeholder="Enter Email" required>
+                    <input type="password" name="password" placeholder="Enter Password" required>
+                    <input type="text" name="portfolio_title" placeholder="Portfolio Title (optional)">
+                    <button class="btnn" type="submit">Register</button>
+                </form>
+
+                <p class="link">Already have an account? <a href="index.php">Login here</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

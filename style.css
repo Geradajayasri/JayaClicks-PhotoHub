@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%),
+                url(images/1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+}
+
+.main.signup-page {
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%),
+                url(images/2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.main.about-page {
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%),
+                url(images/3.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.main.service-page {
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%),
+                url(images/4.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.main.design-page {
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%),
+                url(images/5.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.main.contact-page {
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%),
+                url(images/6.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar {
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon .logo {
+    color: #ff7200;
+    font-size: 35px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.menu ul {
+    
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+}
+
+
+.menu ul li {
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu ul li a:hover {
+    color: #ff7200;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.srch {
+    width: 200px;
+    height: 40px;
+    border: 1px solid #ff7200;
+    background: transparent;
+    color: white;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    border-right: none;
+}
+
+.btn {
+    width: 100px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: white;
+    color: #ff7200;
+}
+
+.content {
+    padding: 40px 20px;
+    width: 1000px;
+    margin: auto;
+    color: white;
+}
+
+.content h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.content span {
+    color: #ff7200;
+    font-size: 60px;
+}
+
+.par {
+    line-height: 1.8;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cn {
+    padding: 10px 30px;
+    background: #ff7200;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+.cn a {
+    text-decoration: none;
+    color: black;
+}
+
+.cn:hover {
+    background: white;
+}
+
+.form {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 25px;
+    border-radius: 10px;
+    width: 260px;
+    position: absolute;
+    top: 25%;
+    right: 5%;
+}
+
+.form h2 {
+    text-align: center;
+    color: #ff7200;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.form input, .form select {
+    width: 100%;
+    margin: 15px 0;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid #ff7200;
+    color: white;
+    border-radius: 5px;
+}
+
+::placeholder {
+    color: #ccc;
+}
+
+.btnn {
+    width: 100%;
+    padding: 10px;
+    background: #ff7200;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btnn:hover {
+    background: white;
+    color: #ff7200;
+}
+
+.link {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.link a {
+    color: #ff7200;
+    text-decoration: none;
+}
+
+.liw {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.icons {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.icons ion-icon {
+    color: white;
+    font-size: 25px;
+    margin: 0 5px;
+    transition: 0.3s ease;
+}
+
+.icons ion-icon:hover {
+    color: #ff7200;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Make background fixed */
+body, html {
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Fix background and prevent main from scrolling */
+.main, .main.signup-page {
+    background-attachment: fixed;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Scrollable content area */
+.content {
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+    padding-right: 15px;
+}
+
+/* Scrollbar styling */
+.content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.content::-webkit-scrollbar-thumb {
+    background-color: #ff7200;
+    border-radius: 5px;
+}
+.gallery .card {
+    background: black;
+    border: 2px solid #ff7200;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px;
+    width: 250px;
+    text-align: center;
+}
+
+.gallery .card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto 10px auto;
+}
